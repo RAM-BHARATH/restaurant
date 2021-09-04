@@ -2,18 +2,20 @@ html{
   background-color: #a0a0ff;
 }
 body {
-    /* background: url('../assets/background.jpg'); */
-    /* min-height: 100vh;
-    min-width: 100vw; */
+    background: url('../assets/restaurant3.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    min-width: 100vw;
     text-align: center;
-    color:#fff;
+    color:rgb(41, 41, 41);
     /* overflow-x: hidden; */
 }
 
 #content{
   font-size: 18px;
   font-family: cursive;
-  background-color: #a0a0ff;
+  /* background-color: #a0a0ff; */
 }
 
 h1{
@@ -41,7 +43,6 @@ p,label,li {
 .navbar{
   display: block;
   /* opacity: 0.3; */
-  opacity: 0.8;
 }
 .navlist{
   display: flex;
@@ -55,6 +56,7 @@ p,label,li {
   opacity: 1;
   cursor: default;
   border-radius: 10px;
+  color: #fff;
 }
 .navlist li:hover{
   background-color: #4545a7;
@@ -78,7 +80,8 @@ p,label,li {
   margin: 10px auto;
   padding: 10px;
   /* padding: 10px 50px; */
-  background-color: #585858; 
+  background-color: #f8f8f8; 
+  border:2px solid #000;
   border-radius: 20px;
 }
 .tab-head{
@@ -92,8 +95,9 @@ p,label,li {
   display: block;
 }
 #menu {
-  background-color: #14c9a2;
+  /* background-color: #14c9a2; */
   border: 2px solid #257463;
+  padding: 20px;
   /* width: 100%; */
 }
 #menu .tab-head{
@@ -114,13 +118,13 @@ p,label,li {
   width: 90%;
 }
 .menu-item{
-  margin: 10px 0;
+  margin: 0 auto;
 }
 .item-name{
   max-width: 600px;
   margin: 0 auto;
   padding: 2px 0;
-  background-color: #fff;
+  background-color: rgb(255, 213, 213);
   font-size: 3em;
   color: #1f1f1f;
 }
@@ -234,6 +238,9 @@ p,label,li {
 
 @media (min-width: 1024px) {
   h1{
+    font-size: 2.5em;
+  }
+  h3{
     font-size: 2em;
   }
   p,li{
