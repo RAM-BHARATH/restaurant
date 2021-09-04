@@ -160,6 +160,9 @@ p,label,li {
 */
 
 @media (min-width: 900px) {
+  #content{
+    font-size: 16px;
+  }
   h1{
     font-size: 3em;
     /* font-weight: 600; */
@@ -175,11 +178,16 @@ p,label,li {
     flex-grow: 1;
     /* width: 60%; */
     /* max-width: 800px; */
-    min-height: 500px;
+    width: 800px;
+    /* height: 500px; */
     margin:0 auto;
     display: none;
     padding: 5px 10px;
     /* background-color: #1b1b1b;  */
+  }
+  .navlist li{
+    padding: 15px 10px;
+    margin: 10px;
   }
   #menubox{
     display: grid;
@@ -225,8 +233,12 @@ p,label,li {
 }
 
 @media (min-width: 1024px) {
-  html{
-    font-size: 12px;
+  h1{
+    font-size: 2em;
+  }
+  p,li{
+    font-size: 1.5em;
+    line-height: 1.5;
   }
 }
 
