@@ -4,6 +4,7 @@ const content = document.getElementById('content');
 function header(){
     const element = document.createElement('div');
     const h1El = document.createElement('h1');
+    h1El.id = "heading";
     const h3El = document.createElement('h3');
     h1El.innerText = "The Biriyani Shop";
     h3El.innerText = "Taste it from the best";
@@ -50,12 +51,12 @@ function aboutBlock(){
   const aboutContainer = document.createElement('div');
   aboutContainer.classList.add('tab');
   aboutContainer.id = 'about';
-  const head = document.createElement('h3');
-  head.classList.add('tab-head');
-  head.innerText = 'About'
+  // const head = document.createElement('h3');
+  // head.classList.add('tab-head');
+  // head.innerText = 'About'
   const para = document.createElement('p');
   para.innerText = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo vel odit, totam excepturi voluptatibus laborum ea reprehenderit molestias animi quam nostrum dolorem unde magni eligendi modi sequi neque? Illum, adipisci.Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab quis sint commodi!Ea harum suscipit perferendis est cum minus aperiam, delectus, quisquam ducimus qui illo dolor, necessitatibus maiores. Quasi, commodi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum totam fuga deserunt vero! Quia sunt aut ipsum ratione similique, eaque facere accusamus repudiandae. Numquam animi possimus autem quibusdam veritatis voluptatem?'
-  aboutContainer.appendChild(head);
+  // aboutContainer.appendChild(head);
   aboutContainer.appendChild(para);
 
   return aboutContainer;
@@ -65,13 +66,14 @@ function menuBlock(){
   const menuContainer = document.createElement('div');
   menuContainer.classList.add('tab');
   menuContainer.id = 'menu';
-  const head = document.createElement('h3');
-  head.classList.add('tab-head');
-  head.innerText = 'Menu';
+  // const head = document.createElement('h3');
+  // head.classList.add('tab-head');
+  // head.innerText = 'Menu';
   const menuBox = document.createElement('div');
   menuBox.id = 'menubox';
 
   const menuItem1 = document.createElement('div');
+  menuItem1.classList.add('menu-item');
   const img1 = document.createElement('img');
   img1.src = '../dist/assets/Hyderabadi_Chicken_Biryani.jpg';
   const item1Name = document.createElement('figcaption');
@@ -79,6 +81,7 @@ function menuBlock(){
   item1Name.innerText='Hyderabadi Chicken Briyani';
 
   const menuItem2 = document.createElement('div');
+  menuItem2.classList.add('menu-item');
   const img2 = document.createElement('img');
   img2.src = '../dist/assets/Kolkata_Biryani.jpg';
   const item2Name = document.createElement('figcaption');
@@ -86,6 +89,7 @@ function menuBlock(){
   item2Name.innerText = 'Kolkata Briyani';
 
   const menuItem3 = document.createElement('div');
+  menuItem3.classList.add('menu-item');
   const img3 = document.createElement('img');
   img3.src = '../dist/assets/Dindugal_Biryani.jpg';
   const item3Name = document.createElement('figcaption');
@@ -113,7 +117,7 @@ function menuBlock(){
   menuBox.appendChild(menuItem3);
   menuBox.appendChild(menuItem4);
 
-  menuContainer.appendChild(head);
+  // menuContainer.appendChild(head);
   menuContainer.appendChild(menuBox);
 
   return menuContainer;
@@ -138,9 +142,9 @@ function contactContainer(){
   const contact = document.createElement('div');
   contact.id = 'contact';
   contact.classList.add('tab');
-  const head = document.createElement('h1');
-  head.innerText = 'Contact Us';
-  head.classList.add('tab-head');
+  // const head = document.createElement('h1');
+  // head.innerText = 'Contact Us';
+  // head.classList.add('tab-head');
   const phoneDiv = document.createElement('div');
   const para1 = document.createElement('p');
   para1.innerText = 'Phone: 912 345 6789';
@@ -153,7 +157,7 @@ function contactContainer(){
   a.href = 'mailto:biriyani@biriyani_shop.com';
   para2.appendChild(a);
   emailDiv.appendChild(para2);
-  contact.appendChild(head);
+  // contact.appendChild(head);
   contact.appendChild(phoneDiv);
   contact.appendChild(emailDiv);
   contact.appendChild(embedMaps());
@@ -227,6 +231,7 @@ function resetButtonColor(){
 console.log(about);
 console.log(menu);
 console.log(contact);
+setButtonColor('a');
 // tabs.appendChild(inputOne());
 // tabs.appendChild(labelOne());
 // tabs.appendChild(divTabOne());

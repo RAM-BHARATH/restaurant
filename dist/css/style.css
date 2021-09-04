@@ -1,9 +1,8 @@
 html{
-  font-size: 100%;
-  font-family: cursive;
+  background-color: #a0a0ff;
 }
 body {
-    background: url('../assets/background.jpg');
+    /* background: url('../assets/background.jpg'); */
     /* min-height: 100vh;
     min-width: 100vw; */
     text-align: center;
@@ -11,20 +10,32 @@ body {
     /* overflow-x: hidden; */
 }
 
+#content{
+  font-size: 18px;
+  font-family: cursive;
+  background-color: #a0a0ff;
+}
+
 h1{
-    font-size: 8em;
+    font-size: 5.5em;
     font-weight: 600;
 }
 h3{
-  font-size: 5em;
+  font-size: 3em;
 }
 p,label,li {
-  font-size: 4em;
+  font-size: 2.5em;
 }
 
 #header{
   /* margin:10px auto; */
-  background-color: rgb(85, 137, 197);
+  /* background-color: rgb(85, 137, 197); */
+  margin: 0 0 10px 0;
+  padding: 5px 0 10px 0;
+}
+
+#heading{
+  margin: 0 0 10px 0;
 }
 
 .navbar{
@@ -43,6 +54,13 @@ p,label,li {
   background: #080836;
   opacity: 1;
   cursor: default;
+  border-radius: 10px;
+}
+.navlist li:hover{
+  background-color: #4545a7;
+}
+.navlist li{
+  border: 1px solid #080836;
 }
 .tabs {
 	/* display: flex; */
@@ -54,10 +72,14 @@ p,label,li {
 .tabs .tab {
   order: 99; /*Put the tabs last*/
   flex-grow: 1;
-	width: 100%;
+	width: 90%;
+  min-height: 500px;
 	display: none;
+  margin: 10px auto;
+  padding: 10px;
   /* padding: 10px 50px; */
-  background-color: #1f1f1f; 
+  background-color: #585858; 
+  border-radius: 20px;
 }
 .tab-head{
   background: rgb(66, 23, 23);
@@ -70,7 +92,8 @@ p,label,li {
   display: block;
 }
 #menu {
-  background-color: rgb(9,51,51);
+  background-color: #14c9a2;
+  border: 2px solid #257463;
   /* width: 100%; */
 }
 #menu .tab-head{
@@ -81,15 +104,18 @@ p,label,li {
 #menubox{
   width: 100%;
   display: grid;
-  background-color: rgb(9, 51, 51);
+  /* background-color: rgb(9, 51, 51); */
   grid-row-gap: 20px;
   margin: 0 auto;
   padding:0 0 20px 0;
 }
-#menubox img{
-  max-width: 600px;
-}
 
+#menubox img{
+  width: 90%;
+}
+.menu-item{
+  margin: 10px 0;
+}
 .item-name{
   max-width: 600px;
   margin: 0 auto;
@@ -133,13 +159,13 @@ p,label,li {
  * Generic Styling
 */
 
-@media (min-width: 1000px) {
+@media (min-width: 900px) {
   h1{
-    font-size: 4em;
-    font-weight: 600;
+    font-size: 3em;
+    /* font-weight: 600; */
   }
   h3{
-    font-size: 2em;
+    font-size: 2.5em;
   }
   p,label,li{
     font-size: 2em;
@@ -147,13 +173,13 @@ p,label,li {
   .tabs .tab {
     order: 99; /*Put the tabs last*/
     flex-grow: 1;
-    width: 60%;
-    max-width: 800px;
+    /* width: 60%; */
+    /* max-width: 800px; */
     min-height: 500px;
     margin:0 auto;
     display: none;
     padding: 5px 10px;
-    background-color: #1b1b1b; 
+    /* background-color: #1b1b1b;  */
   }
   #menubox{
     display: grid;
@@ -164,16 +190,19 @@ p,label,li {
     padding:0 0 20px 0;
   }
   #menubox img{
-    max-width: 100%;
+    width: 400px;
+    height: 300px;
+    border-radius: 20px;
   }
   
   .item-name{
-    max-width: 600px;
+    width: 400px;
     margin: 0 auto;
     padding: 2px 0;
     background-color: #fff;
     font-size: 1.5em;
     color: #1f1f1f;
+    border-radius: 20px;
   }
 
   #map-holder{
@@ -192,6 +221,12 @@ p,label,li {
   #map-frame{
     height:100%;
     width:100%;
+  }
+}
+
+@media (min-width: 1024px) {
+  html{
+    font-size: 12px;
   }
 }
 
