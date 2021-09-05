@@ -83,7 +83,7 @@ p,label,li {
   margin: 10px auto;
   padding: 10px;
   /* padding: 10px 50px; */
-  background-color: #f8f8f8; 
+  background-color: #f8f8f862; 
   border:2px solid #000;
   border-radius: 20px;
 }
@@ -167,9 +167,6 @@ p,label,li {
   }
 } */
 
-/**
- * Generic Styling
-*/
 
 @media (min-width: 900px) {
   #content{
