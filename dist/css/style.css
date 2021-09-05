@@ -1,11 +1,10 @@
 html{
   /* background-color: #a0a0ff; */
   background: url('../assets/restaurant3.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 body {
-    
-    background-size: cover;
-    background-repeat: no-repeat;
     min-height: 100vh;
     min-width: 100vw;
     text-align: center;
