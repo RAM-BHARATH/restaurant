@@ -1,8 +1,9 @@
 html{
-  background-color: #a0a0ff;
+  /* background-color: #a0a0ff; */
+  background: url('../assets/restaurant3.jpeg');
 }
 body {
-    background: url('../assets/restaurant3.jpeg');
+    
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 100vh;
@@ -14,20 +15,20 @@ body {
 }
 
 #content{
-  font-size: 18px;
+  font-size: 12px;
   font-family: cursive;
   /* background-color: #a0a0ff; */
 }
 
 h1{
-    font-size: 5.5em;
-    font-weight: 600;
+    font-size: 3em;
+    /* font-weight: 600; */
 }
 h3{
-  font-size: 3em;
+  font-size: 2em;
 }
 p,label,li {
-  font-size: 2.5em;
+  font-size: 1.3em;
 }
 
 #header{
@@ -35,6 +36,7 @@ p,label,li {
   /* background-color: rgb(85, 137, 197); */
   margin: 0 0 10px 0;
   padding: 5px 0 10px 0;
+  color: rgb(255, 255, 255);
 }
 
 #heading{
@@ -51,7 +53,7 @@ p,label,li {
   justify-content: center;
 }
 .navlist li{
-  padding: 35px;
+  padding: 15px;
   margin: 0 10px;
   background: #080836;
   opacity: 1;
@@ -97,9 +99,10 @@ p,label,li {
 }
 #menu {
   /* background-color: #14c9a2; */
-  border: 2px solid #257463;
+  /* border: 2px solid #257463; */
   padding: 20px;
   /* width: 100%; */
+  margin-bottom: 20px;
 }
 #menu .tab-head{
   width: 100%;
@@ -116,18 +119,22 @@ p,label,li {
 }
 
 #menubox img{
-  width: 90%;
+  width: 250px;
+  height: 170px;
+  border-radius: 10px;
 }
 .menu-item{
   margin: 0 auto;
 }
 .item-name{
-  max-width: 600px;
+  /* width: 300px; */
   margin: 0 auto;
   padding: 2px 0;
-  background-color: rgb(255, 213, 213);
-  font-size: 3em;
+  background-color: rgb(255, 255, 255);
+  font-size: 1.5em;
   color: #1f1f1f;
+  border: 1px solid rgb(3, 1, 1);
+  border-radius: 5px;
 }
 
 #map-holder{

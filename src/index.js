@@ -98,6 +98,7 @@ function menuBlock(){
 
   const menuItem4 = document.createElement('div');
   const img4 = document.createElement('img');
+  menuItem4.classList.add('menu-item');
   img4.src = '../dist/assets/Ambur_Biryani.jpg';
   const item4Name = document.createElement('figcaption');
   item4Name.classList.add('item-name');
