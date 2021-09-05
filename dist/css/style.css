@@ -3,6 +3,8 @@ html{
   background: url('../assets/restaurant3.jpeg');
   background-size: cover;
   background-repeat: no-repeat;
+  font-family: 'Urbanist', sans-serif;
+
 }
 body {
     min-height: 100vh;
@@ -15,7 +17,6 @@ body {
 
 #content{
   font-size: 12px;
-  font-family: cursive;
   /* background-color: #a0a0ff; */
 }
 
